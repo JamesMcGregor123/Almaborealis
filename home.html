@@ -16,12 +16,12 @@
 <!--HERO-->
 
     <section class="text-gray-700 body-font h-screen">
-        <header class="h-20 text-gray-700 body-font fixed w-full bg-white border-b-2 border-gray-200 z-50">
+        <header class="h-auto md:h-20 text-gray-700 body-font fixed w-full bg-white border-b-2 border-gray-200 z-50">
             <div class="container mx-auto flex px-5 py-2 md:p-5 flex-row items-center justify-between">
                     <a class="flex title-font font-medium items-center text-gray-900 mb-0 cursor-pointer">
                         <img src="img/almaborealis-logo.png" class="h-10" alt="Autotrusted Logo">
                     </a>
-                    <nav class="md:ml-auto block lg:flex flex-wrap items-center text-base justify-c enter">
+                    <nav class="hidden md:ml-auto md:block lg:flex flex-wrap items-center text-base justify-c enter">
                         <a class="mr-6 hover:text-gray-900 font-medium text-red-700 cursor-pointer hidden md:block">About</a>
                         <a class="mr-6 hover:text-gray-900 font-medium text-red-700 cursor-pointer hidden md:block">Shop</a>
                         <a class="mr-12 hover:text-gray-900 font-medium text-red-700 cursor-pointer hidden md:block">Contact</a>
@@ -45,20 +45,20 @@
             </div>
           </header>
           <div class="spacer"></div>
-          <div class="flex items-center w-full bg-hero-img bg-cover hero-height bg-left-top">
+          <div class="flex items-end md:items-center w-full bg-hero-img bg-cover hero-height bg-left-top">
             <div class="container mx-auto" data-aos="fade-left"
             data-aos-duration="2000">
-              <div class="bg-white w-1/2 p-6">
-                <h1 class="text-5xl mb-2 font-thin">Clothes that <span class="text-red-700 highlight">kids</span> can make</h1>
+              <div class="bg-white w-full lg:w-1/2 p-6">
+                <h1 class="text-4xl mb-6 font-thin uppercase">Clothes that <span class="text-red-700 highlight">kids</span> can make</h1>
                 <p class="mb-8">Almaborealis is a knitwear design lab in Edinburgh, Scotland. We create clothing concepts that share traditional craft skills and embrace circular economy design principals, to make products that take in consideration the environment of future generations.</p>
                 <div>
-                    <button class="text-2xl px-4 py-2 mr-6 border-solid border border-gray-800">About Us <span>
+                    <button class="text-2xl px-4 py-2 mr-6 border-solid border border-gray-800">About Us <span class="ml-4">
                       <svg class="inline" width="8" height="12" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M0.292969 1.61767L4.58597 5.99075L0.292969 10.3638L1.70697 11.8042L7.41397 5.99075L1.70697 0.177296L0.292969 1.61767Z" fill="#414141"/>
                       </svg>
                     </span>
-                  </button>
-                    <button class="text-2xl px-4 py-2 text-white bg-red-700">Convertibles <span>
+                    </button>
+                    <button class="text-2xl px-4 py-2 text-white bg-red-700">Convertibles <span class="ml-4">
                       <svg class="inline text-white" width="8" height="12" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M0.292969 1.61767L4.58597 5.99075L0.292969 10.3638L1.70697 11.8042L7.41397 5.99075L1.70697 0.177296L0.292969 1.61767Z" fill="#414141"/>
                       </svg>
@@ -71,7 +71,7 @@
 
 <!--MISSION-->
       <section>
-        <div class="container mx-auto text-center py-24" data-aos="fade-up">
+        <div class="container mx-auto text-center py-12 md:py-24" data-aos="fade-up">
           <h1 class="text-2xl mb-8 highlight">Our <span class="text-red-700">Mission</span></h1>
           <p class="mb-8 max-w-screen-lg mx-auto text-gray-700">Where children will be the future thinkers, decision makers and citizens. By using earthe’s resources, we, adults, make products for children to use and enjoy. How do these products impact the child when they are a grown up? As adults, we can choose for these products to have a positive, or a negative impact on future generations.</p>
           <p class="mb-8 max-w-screen-lg mx-auto text-gray-700">Inspired by theories of Maria Montessori and Friedrich Froebel, combined with circular economy thinking, The Convertibles offer future proof kidswear that holistically considers the end user; the child. From participatory learning activities through to sourcing raw materials and an end-of-life plan of the products, future generations and their world is looked after. Waste becomes no more, and the use natural resources is maximised.</p>
@@ -80,30 +80,36 @@
 
 <!--GRID-->
       <section>
-        <div class="container mx-auto flex justify-center pb-24">
-          <div class="mr-8 relative" data-aos="fade-right"
+        <div class="container mx-auto flex-col md:flex-row flex justify-center pb-24">
+          <div class="mr-0 mb-8 md:mr-8 relative" data-aos="fade-right"
           data-aos-duration="1500">
-            <img class="img-hov" src="img/grid-1.jpg" alt="">
+            <img class="m-0 w-full" src="img/grid-1.jpg" alt="">
             <div class="bg-white absolute cover-card">
               <div class="max-w-md p-4">
                 <h2 class="text-xl text-red-700 font-bold">Sustainable Materials</h2>
-                <p class="text-gray-700">Every convertibles kit is made with 100% biodegradable scottish lambswool</p>
+                <p class="text-gray-700 mb-4">Every convertibles kit is made with 100% biodegradable scottish lambswool</p>
+                <button class="text-lg px-4 py-2 mr-6 border-solid border border-gray-800">About Us <span class="ml-4">
+                  <svg class="inline" width="8" height="12" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0.292969 1.61767L4.58597 5.99075L0.292969 10.3638L1.70697 11.8042L7.41397 5.99075L1.70697 0.177296L0.292969 1.61767Z" fill="#414141"/>
+                  </svg>
+                </span>
+                </button>
               </div>
             </div>
           </div>
           <div>
             <div class="mb-8" data-aos="fade-left"
             data-aos-duration="1500">
-              <img class="mb-4" src="img/grid-2.jpg" alt="">
-              <div class="max-w-md">
+              <img class="mb-4 w-full" src="img/grid-2.jpg" alt="">
+              <div class="ml-4 md:ml-0 max-w-md">
                 <h2 class="text-xl text-red-700 font-bold">Build Children's Abilities</h2>
                 <p class="text-gray-700">Help develop a child’s dexterity and creativity</p>
               </div>
             </div>
             <div class="mb-8" data-aos="fade-left"
             data-aos-duration="1500">
-              <img class="mb-4" src="img/grid-3.jpg" alt="">
-              <div class="max-w-md">
+              <img class="mb-4 w-full" src="img/grid-3.jpg" alt="">
+              <div class="ml-4 md:ml-0 max-w-md">
                 <h2 class="text-xl text-red-700 font-bold">Sustainable Materials</h2>
                 <p class="text-gray-700">Every convertibles kit is made with 100% biodegradable scottish lambswool</p>
               </div>
@@ -111,6 +117,42 @@
           </div>
         </div>
       </section>
+
+
+      <footer class="text-gray-700 body-font">
+        <div class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
+          <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
+            <img class="h-8" src="img/almaborealis-logo.png" alt="">
+          </a>
+          <p class="text-sm text-gray-500 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4">© 2020 Almaborealis —
+            <a href="https://twitter.com/knyttneve" class="text-gray-600 ml-1" rel="noopener noreferrer" target="_blank">@almaborealis</a>
+          </p>
+          <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
+            <a class="text-gray-500 cursor-pointer">
+              <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+              </svg>
+            </a>
+            <a class="ml-3 text-gray-500 cursor-pointer">
+              <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+              </svg>
+            </a>
+            <a class="ml-3 text-gray-500 cursor-pointer">
+              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+              </svg>
+            </a>
+            <a class="ml-3 text-gray-500 cursor-pointer">
+              <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
+                <path stroke="none" d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
+                <circle cx="4" cy="4" r="2" stroke="none"></circle>
+              </svg>
+            </a>
+          </span>
+        </div>
+      </footer>
 
 
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>

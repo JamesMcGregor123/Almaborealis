@@ -23,7 +23,7 @@ html{
 }
 
 .cover-card{
-    top: 70%;
+    top: 72.5%;
     left: 5%;
     right: 5%;
     bottom: 5%;
@@ -40,5 +40,16 @@ html{
     }
     100% {
       opacity: 1;
+    }
+  }
+
+@media only screen and (max-width: 768px) {
+    .spacer{
+        height: 0;
+        display: none;
+    }
+
+    .bg-hero-img{
+        background-image: url("../img/almaborealis-hero-mobile.jpg");
     }
   }
