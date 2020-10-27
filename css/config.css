@@ -1,0 +1,20 @@
+.prod-img{
+    height: 500px;
+    background-color: #ccc;
+    flex: 1 1 60%
+}
+
+.prod-img img{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+}
+
+.prod-detail{
+    flex: 1 1 40%;
+}
+
+select{
+    width: 100%;
+}

@@ -1,0 +1,44 @@
+html{
+    font-family: 'Nunito', sans-serif !important
+}
+
+.bg-hero-img{
+    background-image: url("../img/almaborealis-hero.jpg");
+}
+
+.hero-height{
+    height: calc(100vh - 5rem);
+}
+
+.hero-box{
+    animation: 1s ease-out 1 fadeIn;
+}
+
+.spacer{
+    height: 5rem;
+}
+
+.highlight{
+    font-family: 'Pangolin', cursive;
+}
+
+.cover-card{
+    top: 70%;
+    left: 5%;
+    right: 5%;
+    bottom: 5%;
+}
+
+.img-hov:hover{
+    transform-scale-x: 1.1;
+    transform-scale-y: 1.1;
+}
+
+@keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }

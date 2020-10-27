@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Almaborealis - Build Your Own</title>
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/config.css">
+    <link rel="icon" href="img/jumper-ico.png">
+</head>
+<body>
+    <main class="h-screen">
+        <section class="product-detail container mx-auto flex flex-row">
+            <div class="prod-img w-1/2 relative flex items-center justify-center">
+                <div>
+                    <img id="body-img" class="absolute top-0 left-0 component" src="img/config/jumper/jumper-body-lowres-green.png" alt="" srcset="">
+                    <img id="arm-img" class="absolute top-0 left-0 component" src="img/config/jumper/jumper-arm-lowres-blue.png" alt="" srcset="">
+                    <img id="hem-img" class="absolute top-0 left-0 component" src="img/config/jumper/jumper-hem-lowres-red.png" alt="" srcset="">
+                    <img id="collar-img" class="absolute top-0 left-0 component" src="img/config/jumper/jumper-neck-lowres-red.png" alt="" srcset="">
+                </div>
+            </div>
+            <div class="prod-detail">
+                <div class="px-8">
+                    <h1 class="text-2xl">Join the Jumper!</h1>
+                    <h3>From £95</h3>
+                    <div class="options">
+                        <form action="">
+                            <div class="mb-3">
+                                <label class="mb-1 inline-block" for="">Size:</label>
+                                <div class="size btn_grid">
+                                    <select name="" id="" class="px-2 py-1 border-solid border-2 border-gray-300">
+                                        <option value="2-3">2-3 Years</option>
+                                        <option value="4-5">4-5 Years</option>
+                                        <option value="6-7">6-7 Years</option>
+                                        <option value="8-9">8-9 Years</option>
+                                        <option value="10-11">10-11 Years</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="mb-3">
+                                <label class="mb-1 inline-block" for="">Body:</label>
+                                <div class="size btn_grid">
+                                    <select name="" id="body-pick" class="px-2 py-1 border-solid border-2 border-gray-300" onchange="bodyChange()">
+                                        <option class="body" data-name="green" value="green">Green</option>
+                                        <option class="body" data-name="blue" value="blue">Blue</option>
+                                        <option class="body" data-name="Red" value="Red">Red</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="mb-3">
+                                <label class="mb-1 inline-block" for="">Arms:</label>
+                                <div class="size btn_grid">
+                                    <select name="" id="arm-pick" class="px-2 py-1 border-solid border-2 border-gray-300" onchange="armChange()">
+                                        <option data-name="green" value="green">Green</option>
+                                        <option data-name="blue" value="blue">Blue</option>
+                                        <option data-name="Red" value="Red">Red</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="mb-3">
+                                <label class="mb-1 inline-block" for="">Collar:</label>
+                                <div class="size btn_grid">
+                                    <select name="" id="collar-pick" class="px-2 py-1 border-solid border-2 border-gray-300" onchange="collarChange()">
+                                        <option data-name="green" value="green">Green</option>
+                                        <option data-name="blue" value="blue">Blue</option>
+                                        <option data-name="Red" value="Red">Red</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="mb-3">
+                                <label class="mb-1 inline-block" for="">Hem:</label>
+                                <div class="size btn_grid">
+                                    <select name="" id="hem-pick" class="px-2 py-1 border-solid border-2 border-gray-300" onchange="hemChange()">
+                                        <option data-name="green" value="green">Green</option>
+                                        <option data-name="blue" value="blue">Blue</option>
+                                        <option data-name="Red" value="Red">Red</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="scripts/config.js"></script>
+</body>
+</html>
