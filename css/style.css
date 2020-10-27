@@ -26,7 +26,6 @@ html{
     top: 72.5%;
     left: 5%;
     right: 5%;
-    bottom: 5%;
 }
 
 .img-hov:hover{
@@ -51,5 +50,9 @@ html{
 
     .bg-hero-img{
         background-image: url("../img/almaborealis-hero-mobile.jpg");
+    }
+
+    .hero-height{
+        height: 100vh;
     }
   }
