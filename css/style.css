@@ -1,5 +1,12 @@
+body {
+    min-height: 100vh;
+    /* mobile viewport bug fix */
+    min-height: -webkit-fill-available;
+}
+
 html{
-    font-family: 'Nunito', sans-serif !important
+    font-family: 'Nunito', sans-serif !important;
+    height: -webkit-fill-available;
 }
 
 .bg-hero-img{
@@ -44,8 +51,7 @@ html{
 
 @media only screen and (max-width: 768px) {
     .spacer{
-        height: 0;
-        display: none;
+        height: 3.5rem;
     }
 
     .bg-hero-img{
@@ -53,6 +59,6 @@ html{
     }
 
     .hero-height{
-        height: 100vh;
+        height: calc(100vh - 3.5rem);
     }
   }
