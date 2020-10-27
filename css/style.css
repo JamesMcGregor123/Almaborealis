@@ -1,12 +1,16 @@
 body {
-    min-height: 100vh;
-    /* mobile viewport bug fix */
-    min-height: -webkit-fill-available;
+
 }
 
 html{
     font-family: 'Nunito', sans-serif !important;
     height: -webkit-fill-available;
+}
+
+.view{
+    min-height: 100vh;
+    /* mobile viewport bug fix */
+    min-height: -webkit-fill-available;
 }
 
 .bg-hero-img{
