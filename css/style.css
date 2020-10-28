@@ -44,6 +44,23 @@ html{
     transform-scale-y: 1.1;
 }
 
+/* CONFIGURATOR */
+
+.prod-img img{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 600px;
+}
+
+.prod-detail{
+    flex: 1 1 40%;
+}
+
+select{
+    width: 100%;
+}
+
 @keyframes fadeIn {
     0% {
       opacity: 0;
@@ -53,7 +70,8 @@ html{
     }
   }
 
-@media only screen and (max-width: 768px) {
+
+  @media only screen and (max-width: 768px) {
     .spacer{
         height: 3.5rem;
     }
@@ -65,4 +83,17 @@ html{
     .hero-height{
         height: calc(100vh - 3.5rem);
     }
+
+    .prod-img{
+        height: 500px;
+        background-color: #ccc;
+        flex: 1 1 60%
+    }
+  }
+
+  @media only screen and (max-width: 1024px) {
+
+    /* CONFIGURATOR */
+
+
   }
